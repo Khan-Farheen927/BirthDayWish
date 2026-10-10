@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Mahvish 🎂</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--pink:#ff4fc8;--purple:#9b4dff;--white:#fff8ff}
+html{scroll-behavior:smooth}
+body{font-family:Poppins,sans-serif;color:var(--white);min-height:100vh;overflow-x:hidden;text-align:center;background:radial-gradient(ellipse at 65% 15%,#a92d91 0%,transparent 35%),radial-gradient(ellipse at 15% 35%,#40145f 0%,transparent 40%),linear-gradient(145deg,#170629,#371052 50%,#160523)}
+button{font-family:inherit;cursor:pointer}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:20px 5%;position:relative;z-index:3}
+.logo{font-size:24px;font-weight:600}
+.music-btn,.main-btn{border:1px solid #ffc5f5;border-radius:40px;color:white;background:linear-gradient(100deg,#ff4fc8,#803cff);padding:12px 23px;font-size:15px;font-weight:600;box-shadow:0 0 20px #ff4fc855;transition:.25s}
+.music-btn:hover,.main-btn:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 0 28px #ff4fc899}
+.hero{padding:35px 20px 20px;position:relative}
+.eyebrow{letter-spacing:4px;font-size:12px;margin-bottom:18px}
+h1{font-family:'Dancing Script',cursive;font-size:clamp(48px,8vw,86px);line-height:1.1;color:#fff;text-shadow:0 0 20px #ff4fc8,0 0 40px #c13fff88}
+.hero p{margin:16px auto 8px;line-height:1.8;font-size:16px}
+.big-heart{display:block;font-size:48px;margin:12px;animation:heartbeat 1.2s infinite}
+@keyframes heartbeat{50%{transform:scale(1.2)}}
+section{padding:30px 6%}
+.section-title{font-family:'Dancing Script',cursive;font-size:clamp(32px,5vw,48px);margin-bottom:10px;color:#ff9be7}
+.section-subtitle{margin-bottom:24px;color:#e9d7ff}
+.gift-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;max-width:1100px;margin:0 auto}
+.gift-card{padding:25px 18px;border:1px solid #ff9be7aa;border-radius:25px;background:linear-gradient(145deg,#ffffff19,#ff52c81c);box-shadow:0 8px 30px #09001544,inset 0 0 20px #ffb2f411;backdrop-filter:blur(10px);transition:.3s;animation:cardEnter .8s both}
+.gift-card:nth-child(2){animation-delay:.15s}.gift-card:nth-child(3){animation-delay:.3s}
+@keyframes cardEnter{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:translateY(0)}}
+.gift-card:hover{transform:translateY(-8px);border-color:#ffb9f1;box-shadow:0 0 28px #ff4fc855}
+.gift-icon{font-size:58px;margin-bottom:15px;animation:bob 2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-7px) rotate(3deg)}}
+.gift-card h3{font-family:'Dancing Script',cursive;font-size:30px;margin-bottom:12px}
+.gift-card p{line-height:1.7;min-height:54px;color:#eee0ff;font-size:14px}
+.gift-card .main-btn{width:100%;margin-top:15px;color:#290a38;background:linear-gradient(100deg,#ff72d9,#bd70ff)}
+.wish-section{max-width:1100px;margin:35px auto;padding:35px 25px;border:1px solid #ffb5f077;border-radius:30px;background:radial-gradient(ellipse at bottom,#a52b8c77,transparent 65%),linear-gradient(120deg,#51206388,#1e0b3888)}
+.wish-section p{max-width:680px;line-height:1.9;margin:15px auto 22px}
+footer{padding:20px 10px 35px;color:#f6d9ff;font-size:13px}
+.floaty{position:fixed;bottom:-50px;z-index:5;pointer-events:none;animation:floatUp linear forwards;filter:drop-shadow(0 0 8px #ff70d8)}
+@keyframes floatUp{to{transform:translateY(-115vh) rotate(35deg);opacity:0}}
+.modal{display:none;position:fixed;inset:0;z-index:20;align-items:center;justify-content:center;padding:20px;background:#10001dcc;backdrop-filter:blur(8px)}
+.modal.show{display:flex;animation:fadeIn .3s ease}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.box{position:relative;width:min(480px,100%);padding:38px 28px;border:2px solid #ff7bdf;border-radius:28px;background:linear-gradient(145deg,#351047,#170522);box-shadow:0 0 45px #ff42cf77;animation:popIn .45s cubic-bezier(.2,1.5,.5,1)}
+@keyframes popIn{from{transform:scale(.5) rotate(-5deg);opacity:0}to{transform:scale(1) rotate(0);opacity:1}}
+.close-btn{position:absolute;top:12px;right:15px;width:35px;height:35px;border:1px solid #ff9de8;border-radius:50%;background:#70236c;color:white;font-size:21px}
+.box-icon{font-size:55px;margin-bottom:10px}
+.box h2{font-family:'Dancing Script',cursive;color:#ff9be7;font-size:38px;margin-bottom:15px}
+.box p{line-height:1.9;margin-bottom:22px;white-space:pre-line}
+#boomLayer{position:fixed;inset:0;z-index:40;pointer-events:none;overflow:hidden}
+.boom-text{position:absolute;left:50%;top:50%;font-size:clamp(65px,15vw,145px);font-weight:900;color:#fff500;-webkit-text-stroke:3px #ff1493;text-shadow:0 0 15px #fff,0 0 35px #ff00cc,8px 8px 0 #8b005d;animation:boomText 1.35s ease-out forwards;white-space:nowrap}
+@keyframes boomText{0%{transform:translate(-50%,-50%) scale(0) rotate(-20deg);opacity:0}25%{transform:translate(-50%,-50%) scale(1.25) rotate(10deg);opacity:1}45%{transform:translate(-50%,-50%) scale(.9) rotate(-5deg);opacity:1}100%{transform:translate(-50%,-50%) scale(1.5);opacity:0}}
+.boom-particle{position:absolute;left:50%;top:50%;font-size:clamp(20px,4vw,36px);animation:explode 1.65s cubic-bezier(.12,.7,.2,1) forwards}
+@keyframes explode{0%{transform:translate(-50%,-50%) scale(.2) rotate(0);opacity:1}100%{transform:translate(calc(-50% + var(--x)),calc(-50% + var(--y))) scale(1.4) rotate(500deg);opacity:0}}
+.screen-flash{position:absolute;inset:0;background:#ff7ce9;animation:flash .5s ease-out forwards}
+@keyframes flash{0%{opacity:.8}100%{opacity:0}}
+.shockwave{position:absolute;left:50%;top:50%;width:20px;height:20px;border:7px solid #ff74dc;border-radius:50%;transform:translate(-50%,-50%);animation:wave 1s ease-out forwards}
+@keyframes wave{to{width:min(120vw,1100px);height:min(120vw,1100px);opacity:0;border-width:1px}}
+@media(max-width:750px){.gift-grid{grid-template-columns:1fr;max-width:430px}.gift-card p{min-height:auto}.hero{padding-top:25px}.topbar{padding:16px}.logo{font-size:18px}.music-btn{padding:10px 13px;font-size:12px}section{padding-left:18px;padding-right:18px}}
+@media(prefers-reduced-motion:reduce){.gift-card,.gift-icon,.big-heart{animation:none}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="logo">♡ For Mahvish 💕</div>
+  <button class="music-btn" id="musicBtn" onclick="toggleMusic()">🎵 Birthday Music: OFF</button>
+</header>
+<main>
+  <section class="hero">
+    <div class="eyebrow">✨ A SPECIAL DAY FOR SOMEONE SPECIAL ✨</div>
+    <h1>Happy Birthday,<br>Mahvish! 🎂</h1>
+    <p>Today is all about you! 💗<br>I've made a little world of surprises just for you.</p>
+    <span class="big-heart">💖</span>
+  </section>
+  <section id="gifts">
+    <h2 class="section-title">Open Your Little Gifts 🎁</h2>
+    <p class="section-subtitle">Three surprises made with lots of love ✨</p>
+    <div class="gift-grid">
+      <article class="gift-card"><div class="gift-icon">🎁</div><h3>A Sweet Surprise</h3><p>A little surprise to make your day brighter.</p><button class="main-btn" onclick="openGift(0)">Open Gift ✨</button></article>
+      <article class="gift-card"><div class="gift-icon">💌</div><h3>A Letter for You</h3><p>Some special words straight from the heart.</p><button class="main-btn" onclick="openGift(1)">Read Letter 💗</button></article>
+      <article class="gift-card"><div class="gift-icon">🌟</div><h3>Birthday Wishes</h3><p>Wishes for a beautiful year ahead.</p><button class="main-btn" onclick="openGift(2)">See Wishes 🌸</button></article>
+    </div>
+  </section>
+  <section class="wish-section">
+    <h2 class="section-title">🌙 Make a Wish, Mahvish! 🌙</h2>
+    <p>May Allah fill your life with happiness, barakah, success, and beautiful moments. May every new day bring you another reason to smile. You deserve the very best! 💕</p>
+    <button class="main-btn" onclick="makeWish()">✨ Make a Wish ✨</button>
+  </section>
+</main>
+<footer>Made with 💗 especially for Mahvish 💕</footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="popupTitle" onclick="closeModalOutside(event)">
+  <div class="box">
+    <button class="close-btn" onclick="closeGift()" aria-label="Close popup">×</button>
+    <div class="box-icon" id="popupIcon">🎁</div>
+    <h2 id="popupTitle">Surprise, Mahvish!</h2>
+    <p id="popupMessage"></p>
+    <button class="main-btn" onclick="moreMagic()">More Magic 💖</button>
+  </div>
+</div>
+<div id="boomLayer" aria-hidden="true"></div>
+
+<script>
+const modal=document.getElementById("modal");
+const popupIcon=document.getElementById("popupIcon");
+const popupTitle=document.getElementById("popupTitle");
+const popupMessage=document.getElementById("popupMessage");
+const boomLayer=document.getElementById("boomLayer");
+const gifts=[
+ {icon:"🎁",title:"Surprise, Mahvish!",message:"You deserve happiness, laughter, beautiful memories, and all the little things that make life magical.\n\nKeep shining! ✨💗"},
+ {icon:"💌",title:"A Little Letter for You",message:"Dear Mahvish, 💕\n\nYou are special, and today is a reminder of how much happiness one person can bring into this world. May your smile always shine, your dreams come true, and your heart stay full of peace and love.\n\nHappy Birthday! 🌸"},
+ {icon:"🌟",title:"Birthday Wishes",message:"May Allah bless you with good health, endless happiness, success, and peace. May He make your difficult days easier and your beautiful dreams come true.\n\nHave the most wonderful birthday, Mahvish! 🎂💖"}
+];
+let magicCount=0;
+function openGift(index){const gift=gifts[index];popupIcon.textContent=gift.icon;popupTitle.textContent=gift.title;popupMessage.textContent=gift.message;modal.classList.add("show");surpriseBoom();celebrate()}
+function makeWish(){popupIcon.textContent="🌙";popupTitle.textContent="Your Wish Is on Its Way!";popupMessage.textContent="Close your eyes and make a beautiful wish, Mahvish! ✨\n\nMay Allah accept your duas, fill your life with barakah, and bring happiness to your heart. Ameen. 💖";modal.classList.add("show");surpriseBoom();celebrate()}
+function closeGift(){modal.classList.remove("show")}
+function closeModalOutside(event){if(event.target===modal)closeGift()}
+function moreMagic(){magicCount++;const messages=[
+ {icon:"💖",title:"You Are Precious!",message:"Never forget how special you are. Keep smiling, keep dreaming, and keep being yourself. The world needs your sparkle! ✨"},
+ {icon:"🎂",title:"One More Birthday Hug!",message:"Sending you a big virtual hug, lots of love, and a thousand reasons to smile. May this year be your happiest one yet! 🥰"},
+ {icon:"🎉",title:"Birthday Magic!",message:"May your days be colorful, your heart be peaceful, and your future be brighter than all the stars in the sky. Happy Birthday again! 🌟"}
+];const m=messages[(magicCount-1)%messages.length];popupIcon.textContent=m.icon;popupTitle.textContent=m.title;popupMessage.textContent=m.message;surpriseBoom();celebrate()}
+
+function surpriseBoom(){
+  boomLayer.replaceChildren();
+  const flash=document.createElement("div");flash.className="screen-flash";boomLayer.appendChild(flash);
+  const wave=document.createElement("div");wave.className="shockwave";boomLayer.appendChild(wave);
+  const text=document.createElement("div");text.className="boom-text";text.textContent="BOOM! 💥";boomLayer.appendChild(text);
+  const emojis=["💖","✨","🎉","💗","🌟","🎊","💕","⭐","🎁","💥","🌸"];
+  const count=window.innerWidth<600?38:70;
+  for(let i=0;i<count;i++){
+    const p=document.createElement("span");p.className="boom-particle";p.textContent=emojis[Math.floor(Math.random()*emojis.length)];
+    const angle=Math.random()*Math.PI*2;const distance=100+Math.random()*Math.min(window.innerWidth*.48,420);
+    p.style.setProperty("--x",`${Math.cos(angle)*distance}px`);p.style.setProperty("--y",`${Math.sin(angle)*distance}px`);
+    p.style.animationDelay=`${Math.random()*.18}s`;boomLayer.appendChild(p);
+  }
+  setTimeout(()=>boomLayer.replaceChildren(),1900);
+}
+function celebrate(){
+  const symbols=["✦","♥","✧","🎉","✨"];const colors=["#ff4fc8","#ffdf5d","#9b4dff","#69f0ff","#fff"];
+  for(let i=0;i<55;i++){
+    const c=document.createElement("span");c.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+    c.style.cssText=`position:fixed;left:${Math.random()*100}vw;top:-30px;z-index:25;pointer-events:none;font-size:${12+Math.random()*20}px;color:${colors[Math.floor(Math.random()*colors.length)]};`;
+    document.body.appendChild(c);const duration=1800+Math.random()*1800;
+    c.animate([{transform:"translateY(0) rotate(0)",opacity:1},{transform:`translateY(${innerHeight+60}px) rotate(${360+Math.random()*500}deg)`,opacity:0}],{duration,easing:"ease-out"});
+    setTimeout(()=>c.remove(),duration+100);
+  }
+}
+function createFloat(){
+  const h=document.createElement("div");h.className="floaty";h.textContent=["💗","💕","💖","✨","🌸","🎉"][Math.floor(Math.random()*6)];
+  h.style.left=Math.random()*100+"vw";h.style.fontSize=15+Math.random()*20+"px";h.style.animationDuration=5+Math.random()*6+"s";
+  document.body.appendChild(h);setTimeout(()=>h.remove(),12000);
+}
+setInterval(createFloat,650);
+
+let audioContext=null,musicTimer=null,musicPlaying=false,noteIndex=0;
+const melody=[523.25,523.25,587.33,523.25,698.46,659.25,523.25,523.25,587.33,523.25,783.99,698.46];
+function playNote(frequency){
+  if(!audioContext||audioContext.state!=="running")return;
+  const oscillator=audioContext.createOscillator(),gain=audioContext.createGain();
+  oscillator.type="sine";oscillator.frequency.value=frequency;
+  gain.gain.setValueAtTime(.0001,audioContext.currentTime);gain.gain.exponentialRampToValueAtTime(.10,audioContext.currentTime+.04);gain.gain.exponentialRampToValueAtTime(.0001,audioContext.currentTime+.42);
+  oscillator.connect(gain);gain.connect(audioContext.destination);oscillator.start();oscillator.stop(audioContext.currentTime+.45);
+}
+async function toggleMusic(){
+  const button=document.getElementById("musicBtn");
+  try{
+    if(!audioContext){const AC=window.AudioContext||window.webkitAudioContext;if(!AC){alert("Your browser does not support this music feature.");return}audioContext=new AC()}
+    if(musicPlaying){clearInterval(musicTimer);musicPlaying=false;button.textContent="🎵 Birthday Music: OFF";return}
+    await audioContext.resume();musicPlaying=true;button.textContent="🎶 Birthday Music: ON";
+    playNote(melody[noteIndex++%melody.length]);musicTimer=setInterval(()=>{if(musicPlaying)playNote(melody[noteIndex++%melody.length])},450);
+  }catch(e){console.error(e);button.textContent="🎵 Try Music Again"}
+}
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeGift()});
+
+/* Automatic opening celebration: boom appears as soon as the page loads */
+window.addEventListener("load",()=>{
+  setTimeout(()=>{surpriseBoom();celebrate()},450);
+  for(let i=0;i<16;i++)setTimeout(createFloat,i*180);
+});
+</script>
+</body>
+</html>
